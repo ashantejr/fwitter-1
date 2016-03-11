@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h1>Welcome to Fwitter</h1>
+    <p>Any resemblances to any existing social media sites are purely coincidental.</p>
+      <ul>
+      <% @tweet.each do |tweet| %>
+      <li>
+        <%= tweet.username %> says:
+        <%= tweet.status %>
+      </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
